@@ -5,5 +5,8 @@ This is for myself to provide some insights.
 _ Java: class solution:
             public int[] twoSum(int[] nums,
                            int target){
-               for (int i = 0: I < num
+               for (int i = 0: I < num：
+
+
+# For the algorithm: 
 
