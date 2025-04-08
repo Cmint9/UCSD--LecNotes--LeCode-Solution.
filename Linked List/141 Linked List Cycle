@@ -1,7 +1,18 @@
 Leetcode 141 Linked list cycle 
 
-" There is cycle is Linked list if some node in the list can be reached again by continuously following the "next" pointer. 
+" There is a cycle in Linked List if some node in the list can be reached again by continuously following the "next" pointer. 
 " Pos" is used to denoted index of node"
 
 Class solution:
   def hasCycle(self, head = ListNode -> bool:
+    if Not head:
+       return False
+    slow = head
+    fast = head.next
+    while slow !=  fast:
+      if not fast or not fast.next:
+        return False
+      slow = slow.next
+      fast = fast.next.next
+    return True
+
