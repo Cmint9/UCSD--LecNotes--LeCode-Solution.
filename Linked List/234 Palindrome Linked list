@@ -8,4 +8,7 @@ Example 2: Input: head = [1,2]
         output = false
 
 # Code:
+        class ListNode:
+                def_int_(self, val =0, next =Node):
+
 
