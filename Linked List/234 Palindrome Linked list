@@ -10,5 +10,24 @@ Example 2: Input: head = [1,2]
 # Code:
         class ListNode:
                 def_int_(self, val =0, next =Node):
+                        self.val = val
+                        self.next = next
+
+Class solution: 
+        def isPalindrome(self, head: Optinal[ListNode]->
+                if not head or not head.next:
+                        return True
+                Slow = Fast = head
+                Reversed_list = None
+# Reverse the leaf half of the list while searching
+# The starting point of the right half
+        while fast is not None and fast, next is not None:
+                temp =slow
+                slow = fast.next.next
+# Place node at the start of reversed half
+                temp.next = reverse_list
+                reversed_list = temp
+
+        
 
 
