@@ -3,3 +3,27 @@
 # For example: Input: head  = [1,2,3,4,5]
 #             Output = [5,4,3,2,1]
 
+
+Class ListNode:
+  def_init_(self,val=0, next = Node):
+          self.val = val
+          self.Next = next
+
+Class Solution: (intersection solution)
+  def reverList(self,head= optimal[ListNode] -> Optional[ListNode]:
+    # Initialize prev pointer as NULL
+      prev = None
+    # Initialize the current pointer as the head
+      curr = head
+    # Run a Loop till curr points to Null
+      while curr:
+    # Initialize the next pointer as the next pointer of curr
+        next = curr.next
+    # Now assign the prev pointer to curr's next pointer,
+        curr.next = prev
+        curr.next = prev
+
+        prev = curr
+        curr = next
+  return prev
+        
