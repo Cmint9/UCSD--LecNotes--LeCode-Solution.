@@ -1,4 +1,7 @@
-# LeeTCode-Solution
-Hello👋🏻 Welcome to my leetcode place where I will share all the leetcode problems I have solved.
+# UCSD Data Structure and Algroithm
+
+
+##  Leetcode Solution 
+Hello👋🏻 Welcome to my LeetCode place where I will share all the LeetCode problems I have solved.
 
 
