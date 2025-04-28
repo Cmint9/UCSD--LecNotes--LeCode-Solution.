@@ -1,0 +1,11 @@
+ListAppend(list, newNode){
+  if(list-> head == null){
+    list->head = newNode
+    list-> tail = newNode
+  }
+  else{
+    list->tail->next = newNode
+    list->tail = newNode
+  }
+}
+# Appending an item to an empty list updates both the ;ist's head and tail pointer
