@@ -26,3 +26,13 @@ get_sorted_student_iDs() returns a list with all distinct student IDs, sorted in
 get_student_scores() gets all scores that exist in the gradebook for the student whose ID equals the method parameter. Scores are returned as a dict that maps an assignment name to the student's corresponding score for that assignment.
 
 # Solution: 
+
+Step1: choose a data structure for outer dictionary. Keys will be the assignement names, and the values can be dictionaries mapping student IDs to scores.
+nested dictionary storing all scores. 
+Students and assignments: sets to track all unique IDs and names for fast sorting.
+
+Step2: implement set_score() and get_score() method.
+
+
+
+
