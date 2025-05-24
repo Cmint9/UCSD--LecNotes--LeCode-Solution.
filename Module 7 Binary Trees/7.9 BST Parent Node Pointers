@@ -1,0 +1,32 @@
+# BST Parent Node Pointer
+BSTInsert algorithm for BSTs with nodes containing parent pointers.
+This code is for us to understand how it works:
+BSTInsert(tree, node) {
+   if (tree⇢root == null) {
+      tree⇢root = node
+      node⇢parent = null
+      return
+   }
+
+   cur = tree⇢root
+   while (cur != null) {
+      if (node⇢key < cur⇢key) {
+         if (cur⇢left == null) {
+            cur⇢left = node
+            node⇢parent = cur
+            cur = null
+         }
+         else
+            cur = cur⇢left
+      }
+      else {
+         if (cur⇢right == null) {
+            cur⇢right = node
+            node⇢parent = cur
+            cur = null
+         }
+         else
+            cur = cur⇢right
+      }
+   }
+}
