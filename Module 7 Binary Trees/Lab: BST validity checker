@@ -26,9 +26,6 @@ which corresponds to the tree above, then the output is:
 because 60 violates BST requirements by being in the left subtree of 50.
 
 
-Follow module 7, we get some basic ideas and algorithms to solve this lab.
-
-
 Ex:
 Tree 1 with 60 node violation
 
@@ -41,3 +38,15 @@ None
 because all BST requirements are met.
 
 The input format doesn't allow creating a tree with a node's child referencing an ancestor, so unit tests are used to test such cases.
+
+
+
+
+
+## Following module 7, we get some basic ideas and algorithms to solve this lab.
+At first, we are asked to implement a function called check_bst_balidity(root_node) in the file BSTChecker.py
+Then, check if a given binary tree is a valid Binary Search Tree or not.
+If the tree violates BST properties, return the first violating node. Otherwise, we have to return NOne.
+
+
+
