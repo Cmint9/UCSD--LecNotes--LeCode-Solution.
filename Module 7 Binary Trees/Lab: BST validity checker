@@ -9,21 +9,25 @@ A violating node X will meet one or more of the following conditions:
 
 X is in the left subtree of ancestor Y, but X's key is > Y's key
 X is in the right subtree of ancestor Y, but X's key is < Y's key
-X's left or right child rererences an ancestor
+X's left or right child references an ancestor
 Note: Other types of BST violations can occur, but are not covered in this lab.
 
-The given code in main.py reads and parses input, and builds the tree for you. Nodes are presented in the form (key, left_child, right_child), where left_child and right_child can be nested nodes or None. A leaf node is of the form (key). After parsing tree input, the check_bst_validity() function is called and the returned node's key (or "None") is printed.
+The given code in main.py reads and parses input and builds the tree for you. Nodes are presented in the form (key, left_child, right_child), where left_child and right_child can be nested nodes or None. A leaf node is of the form (key). After parsing tree input, the check_bst_validity() function is called and the returned node's key (or "None") is printed.
 
 Ex:
 Tree 1 with 60 node violation
 
 If the input is:
 
-(50, (25, None, (60)), (75))
+(50, (25, None, (60)), (75)
 which corresponds to the tree above, then the output is:
 
 60
 because 60 violates BST requirements by being in the left subtree of 50.
+
+
+Follow module 7, we get some basic ideas and algorithms to solve this lab.
+
 
 Ex:
 Tree 1 with 60 node violation
