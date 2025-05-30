@@ -50,3 +50,11 @@ Get the length of the second sorted run, starting immediately after the first
 Merge the two runs with the provided merge() method
 Reassign i with the first index after the second run, or 0 if the second run ends at the list's end
 Go to step 2
+
+
+## Algorithms for solving the problem 
+We need to implement get_sorted_run_length and natural_merge_sort methods.
+* At first, we check if the start_index is out of bounds, if it is, return 0. Then we can try to iterate through the list staring from start_index and count how many consecutive eements are in ascedning order
+* Then, we can think about the " natural_merge_sort", continuously find and merge sorted runs unitl the entire list is sorted. 
+
+
