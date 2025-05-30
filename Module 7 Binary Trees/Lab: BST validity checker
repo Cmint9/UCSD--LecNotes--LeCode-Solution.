@@ -48,5 +48,11 @@ At first, we are asked to implement a function called check_bst_balidity(root_no
 Then, check if a given binary tree is a valid Binary Search Tree or not.
 If the tree violates BST properties, return the first violating node. Otherwise, we have to return NOne.
 
+## We can understand what a Valid BST first.
+* All values in the left subtree must be less than the node's key
+* All values in the right subtree must be greater than the node's key
+* There should be no cyclic reference.
+ 
+
 
 
