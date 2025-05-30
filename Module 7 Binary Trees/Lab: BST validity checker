@@ -52,6 +52,15 @@ If the tree violates BST properties, return the first violating node. Otherwise,
 * All values in the left subtree must be less than the node's key
 * All values in the right subtree must be greater than the node's key
 * There should be no cyclic reference.
+
+We may need two checks: Ancestor check and Kay Range check.
+For Ancestor check, the ancestors set keeps track of nodes visited in the current path. if a node is revisited, it indicates a cycle. and the 
+node is returned as a violator.
+
+For Key Range Check: For each node, its key must lie within the range. The lower and upper bounds are updated recursively. 
+For left children, the upper bound becomes the parent's key. for right children, the lower bound becomes the parent's key.
+
+
  
 
 
