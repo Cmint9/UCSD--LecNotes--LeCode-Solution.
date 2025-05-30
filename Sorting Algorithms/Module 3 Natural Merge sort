@@ -58,3 +58,14 @@ We need to implement get_sorted_run_length and natural_merge_sort methods.
 * Then, we can think about the " natural_merge_sort", continuously find and merge sorted runs unitl the entire list is sorted. 
 
 
+natural_merge_sort:
+
+The method starts by checking if the list length is 1 or less, in which case it returns immediately as the list is already sorted.
+The outer loop continues until no more merges are needed. Hence, the inner loop processes the list in segments:
+
+if it finds the first sorted run starting from the current index i.
+Or if the first run spans the entire list, the list is sorted, and the method returns.
+It then finds the second sorted run immediately following the first run.
+
+The index i is updated to the position after the second run, or reset to 0 if the end of the list is reached.
+Finally, this loop will continue until no more merges are performed in a full pass through the list, indicating that the list is fully sorted.
