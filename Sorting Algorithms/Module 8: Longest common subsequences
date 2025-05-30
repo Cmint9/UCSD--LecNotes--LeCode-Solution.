@@ -68,4 +68,16 @@ Some test cases also test matrix entries returned from get_entry(). Unit tests a
 
 
 
-# Solving algroithms 
+# Solving algorithms
+Implement the LCSMatrix class that constructs a matrix to find the longest coomon subsequences(LCS).
+The matrix will be populated using dynamic programming. 
+* We can use dynamic programming matrix construction. 
+Initialize a matrix where each entry at position(i,j) represents the length of the LCS of the substrings. 
+the substrings str[0..i-1] and str2[0..j-1]
+* Then, we also need to retrieve the LCS set.
+After constructing the matrix, backtrack from the bootom-right corner. and we can use a recursive approach to explore
+all paths that contribute to the maximum LCS length, ensuring all distinct sequences are collected.
+
+
+
+
