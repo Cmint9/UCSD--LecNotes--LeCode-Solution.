@@ -79,5 +79,18 @@ After constructing the matrix, backtrack from the bootom-right corner. and we ca
 all paths that contribute to the maximum LCS length, ensuring all distinct sequences are collected.
 
 
+Explanation
+Matrix Initialization:
 
+The __init__ method initializes a matrix with dimensions (len(str1) + 1) x (len(str2) + 1) to store the lengths of LCS for all subproblems. 
+The extra row and column handle the base case where one of the strings is empty.
+Matrix Population:
+The matrix is filled using dynamic programming. For each character in str1 and str2, if they match, the value is incremented from the diagonal cell. 
+If they don't match, the value is taken from the maximum of the left or top cell.
+Entry Retrieval:
+The get_entry method checks bounds and returns the corresponding matrix value, adjusting for the 1-based index used during matrix construction.
+LCS Set Construction:
+The backtrack function recursively constructs all possible LCS strings by moving backwards through the matrix. 
+If characters match, they are added to all strings from the diagonal cell. 
+If not, paths from the left or top are explored if they contribute to the maximum length.
 
