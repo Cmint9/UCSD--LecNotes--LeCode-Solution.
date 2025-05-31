@@ -3,19 +3,19 @@ In UCSD's Algorithms class, we can practice algorithms and data structures from 
 
 ### Module 1: Introduction to Data Structures and Algorithms
 
-## Module 2: Searching and Algorithm Analysis
+### Module 2: Searching and Algorithm Analysis
 
-## Module3: Sorting Algorithms
+### Module3: Sorting Algorithms
 
-## Module4: Lists
+### Module4: Lists
 
-## Module5: Stacks and Queues
+### Module5: Stacks and Queues
 
-## Module6: Hash Tables
+### Module6: Hash Tables
 
-## Module7: Trees
+### Module7: Trees
 
-## Module8: Algorithms
+### Module8: Algorithms
 
 
 
