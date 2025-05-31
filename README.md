@@ -1,21 +1,21 @@
 # UCSD Data Structure and Algorithm
 In UCSD's Algorithms class, we can practice algorithms and data structures from different modules each week. zybook provides us with a fairly rich collection of practice problems that can help us reinforce our review after learning a concept.
 
-## Module1: Introduction to Data Structures and Algorithms
+## Module 1: Introduction to Data Structures and Algorithms
 
-## Module2: Searching and Algorithm Analysis
+## Module 2: Searching and Algorithm Analysis
 
-## Module3: Lists
+## Module3: Sorting Algorithms
 
-## Module4: Stacks and Queues
+## Module4: Lists
 
-## Module5
+## Module5: Stacks and Queues
 
-## Module6
+## Module6: Hash Tables
 
-## Module7
+## Module7: Trees
 
-## Module8
+## Module8: Algorithms
 
 
 
