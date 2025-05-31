@@ -11,6 +11,13 @@ In UCSD's Algorithms class, we can practice algorithms and data structures from 
 
 ## Module5
 
+## Module6
+
+## Module7
+
+## Module8
+
+
 
 ##  Leetcode Solution 
 Hello👋🏻 Welcome to my LeetCode place, where I will share all the LeetCode problems I have solved.
