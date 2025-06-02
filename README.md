@@ -18,6 +18,10 @@ In UCSD's Algorithms class, we can practice algorithms and data structures from 
 
 ### Module8: Algorithms
 
+### Midterm Notes
+
+### Final Main Notes
+
 
 
 ##  Leetcode Solution 
