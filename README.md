@@ -1,4 +1,4 @@
-<img src="UCSD.png" style="width:50%; height:auto;">
+<img src="UCSD.png" style="width:30%; height:auto;">
 
 # UCSD Data Structure and Algorithm
 
