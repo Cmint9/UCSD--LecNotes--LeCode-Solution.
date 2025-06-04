@@ -1,1 +1,10 @@
+A data structure is a way of organizing, storing, and performing operations on data. Operations performed on a data structure include accessing or updating stored data, searching for specific data, inserting new data, and removing data. The following provides a list of basic data structures.
+1) Record
+2) Array: Array elements are stored in sequential locations, so can be easily accessed using an index
+3) Linked List: stores items in a specified order.
+4) Binary Tree: A node in a binary tree can have zero, one, or two children.
+5) Hash Table
+6) Heap
+7) Graph
+
 
