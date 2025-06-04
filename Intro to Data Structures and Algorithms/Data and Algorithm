@@ -7,4 +7,5 @@ A data structure is a way of organizing, storing, and performing operations on d
 6) Heap
 7) Graph
 
-
+An algorithm wth a polynomial runtime is considered efficient.
+An efficient algorithm to solve an NP-complete problem may exist.
