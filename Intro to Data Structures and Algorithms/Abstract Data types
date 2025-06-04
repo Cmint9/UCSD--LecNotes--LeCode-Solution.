@@ -1,0 +1,16 @@
+ADTs: Abstract data types
+
+An abstract data type (ADT) is a data type described by predefined user operations, such as "insert data at rear," without indicating how each operation is implemented. 
+An ADT can be implemented using different underlying data structures. However, a programmer need not have knowledge of the underlying implementation to use an ADT.
+
+They will have operations like appending data items. remove a data or search whether a data item exists.
+There are some abstract data types:
+
+List: Items are ordered based on how items are added. Duplicate items are allowed. A list is an ADT for holding ordered data, where the order is based on how the program inserts or removes items. A list may contain duplicate items.
+Dynamic array: 
+Stack: A stack is an ADT in which items are only inserted on or removed from the top of a stack.
+Queue: A queue is an ADT in which items are inserted at the end of the queue and removed from the front of the queue.
+Deque: A deque (pronounced "deck" and short for double-ended queue) is an ADT in which items can be inserted and removed at both the front and back.
+Bag: Items are not ordered. Duplicate items are allowed.A bag is an ADT for storing items in which the order does not matter and duplicate items are allowed.
+Correct.
+Set: Items are not ordered. Duplicate items are not allowed. A set is an ADT for a collection of distinct items, so duplicate items are not allowed.
