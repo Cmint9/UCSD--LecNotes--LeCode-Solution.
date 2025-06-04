@@ -1,0 +1,13 @@
+# Stack abstract data type
+Stack: 
+push: The stack push operation inserts an item on the top of the stack.
+pop:  The stack pop operation removes and returns the item at the top of the stack
+
+# A stack is a last-in-first-out 
+
+Operation	Description	Example starting with stack: 99, 77 (top is 99).
+Push(stack, x)	Inserts x on top of stack	Push(stack, 44). Stack: 44, 99, 77
+Pop(stack)	Returns and removes item at top of stack	Pop(stack) returns: 99. Stack: 77
+Peek(stack)	Returns but does not remove item at top of stack	Peek(stack) returns 99. Stack still: 99, 77
+IsEmpty(stack)	Returns true if stack has no items	IsEmpty(stack) returns false.
+GetLength(stack)	Returns the number of items in the stack	GetLength(stack) returns 2.
