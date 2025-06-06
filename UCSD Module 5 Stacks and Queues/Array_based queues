@@ -1,0 +1,51 @@
+Array_based queue storage:
+
+Length: an integer for the queue's length
+The queue's content starts at array[front_index] and continues forward through length items
+
+A bounded queue is a queue with a length that does not exceed a specified maximum value. An additional variable, max_length, is needed. max_length is commonly assigned at construction time and does not change for the queue's lifetime. 
+A bounded queue with a length equal to the maximum length is said to be full.
+
+If max_length is negative, the queue is unbounded.
+If max_length is nonnegative, the queue is bounded.
+
+# Code for array_based queue resize operation:
+def resize(self):
+    new_size = len(self.queue_list) * 2
+    if self.max_length >= 0 and new_size > self.max_length:
+        new_size = max_length
+    
+    new_list = [0] * new_size
+    for i in range(self.length):
+        item_index = (self.front_index + i) % len(self.queue_list)
+        new_list[i] = self.queue_list[item_index]
+
+
+    self.queue_list = new_list
+    self.front_index = 0
+
+
+# Enqueue and dequeue operations:
+An enqueue operation:
+
+Compares self.length and self.max_length. If equal, the queue is full and so no change occurs and False is returned.
+Compares self.length and len(self.queue_list). If equal, a resize operation occurs.
+Computes the enqueued item's index as (self.front_index + self.length) % len(self.queue_list) and assigns to queue_list at that index. Ex: Enqueueing 42 into a queue with front index 2, length 3, and queue_list length 8 assigns queue_list at index (2 + 3) % 8 = 5 with 42.
+Increments the length attribute and then returns True.
+A dequeue operation:
+
+Makes a copy of the list item at front_index.
+Decrements length.
+Increments front_index, resetting to 0 if the incremented value equals the allocation size.
+Returns the list item from step 1
+
+
+
+
+#
+
+
+
+
+
+
