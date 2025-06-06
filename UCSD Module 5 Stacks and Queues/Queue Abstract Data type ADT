@@ -3,5 +3,10 @@ Queue abstract data type
 1): A queue is an ADT in which items are inserted at the end of the queue and removed from the front of the queue. 
 "enqueue": inserts an item at the end of the ques
 "dequeue": removes and returns the item at the front of the queue
-A queues is referred to as a First in first out ADT, it can implement using a linked list or an array.
+A queue is referred to as a First in first-in-first-out ADT, it can be implemented using a linked list or an array.
+
+Peek(queue) L returns but does not remove an item at the front of the queue
+IsEmpty(queue) : return true if the queue has no items
+GetLength(queue): returns the number of items in the queue
+
 
