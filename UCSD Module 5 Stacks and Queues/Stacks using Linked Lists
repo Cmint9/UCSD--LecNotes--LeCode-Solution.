@@ -1,12 +1,19 @@
 A stack is often implemented using a linked list, with the list's head node being the stack's top
 
-# "pop" : assign a lcoal variable with the head node's data, removing the head node from the list and returning the local variable.
+# "pop" : assign a local variable with the head node's data, removing the head node from the list and returning the local variable.
 # StackPop returns the head node's data, not the head node itself.
 
 
 Array-based stack storage
-A stack can be implementated with an array, 
+A stack can be implemented with an array, 
 "allocationSize" : an integer for the array's allocated size
 length: an integer for the stack's length
 
-"unbonded stack" is a stack with no upper limit on length
+"Unbonded stack" is a stack with no upper limit on length, it can increase indefinitely. 
+"Bounded stack" is a stack with a length that does not exceed a maximum value. 
+for example: a bounded stack with allocationSize = 100 cannot exceed a length of 100 items.
+
+A bounded stack with a length equal to the maximum length is said to be full.
+
+
+
