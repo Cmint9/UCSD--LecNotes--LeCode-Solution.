@@ -9,11 +9,50 @@ A stack can be implemented with an array,
 "allocationSize" : an integer for the array's allocated size
 length: an integer for the stack's length
 
-"Unbonded stack" is a stack with no upper limit on length, it can increase indefinitely. 
+"Unbonded stack" is a stack with no upper limit on length; it can increase indefinitely. 
 "Bounded stack" is a stack with a length that does not exceed a maximum value. 
-for example: a bounded stack with allocationSize = 100 cannot exceed a length of 100 items.
+for example, a bounded stack with allocationSize = 100 cannot exceed a length of 100 items.
 
 A bounded stack with a length equal to the maximum length is said to be full.
+
+# Stack class using a Python list: 
+class Stack:
+    def __init__(self):
+        self.stack_list = []
+    
+    def pop(self):
+        return self.stack_list.pop()
+    
+    def push(self, item):
+        self.stack_list.append(item)
+
+The stack class implements an unbounded stack.
+
+
+# Python Stack class that supports bounded or unbounded functionality
+class Stack:
+    # Initializes the stack. If the optional_max_length argument is omitted or 
+    # negative, the stack is unbounded. If optional_max_length is non-negative, 
+    # the stack is bounded.
+    def __init__(self, optional_max_length = -1):
+        self.stack_list = []
+        self.max_length = optional_max_length
+    #
+    # Pops and returns the stack's top item.
+    def pop(self):
+        return self.stack_list.pop()
+    #
+    # Pushes an item, provided the push doesn't exceed bounds. Does nothing 
+    # otherwise. Returns True if the push occurred, False otherwise.
+    def push(self, item):
+        # If at max length, return false
+        if len(self.stack_list) == self.max_length:
+            return False
+        #
+        # If unbounded, or bounded and not yet at max length, then push
+        self.stack_list.append(item)
+        return True
+
 
 
 
