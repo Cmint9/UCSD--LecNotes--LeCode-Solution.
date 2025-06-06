@@ -1,0 +1,12 @@
+A stack is often implemented using a linked list, with the list's head node being the stack's top
+
+# "pop" : assign a lcoal variable with the head node's data, removing the head node from the list and returning the local variable.
+# StackPop returns the head node's data, not the head node itself.
+
+
+Array-based stack storage
+A stack can be implementated with an array, 
+"allocationSize" : an integer for the array's allocated size
+length: an integer for the stack's length
+
+"unbonded stack" is a stack with no upper limit on length
