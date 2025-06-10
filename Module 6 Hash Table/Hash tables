@@ -14,3 +14,6 @@ A common hash function uses the modulo operator %, which computes the integer re
 Ex: For a 20 element hash table, a hash function of key % 20 will map keys to bucket indices 0 to 19.
 
 # Collisions: When an item being inserted into a hash table maps to the same bucket as an existing item in the hash table.
+# Chaining is a collision resolution technique where each bucket has a list of items (so bucket 5's list would become 55, 75).
+# Open addressing is a collision resolution technique where collisions are resolved by looking for an empty bucket elsewhere in the table (so 75 might be stored in bucket 6). 
+
