@@ -9,3 +9,8 @@ ListAppend(list, newNode){
   }
 }
 # Appending an item to an empty list updates both the ;ist's head and tail pointer
+
+
+
+
+###
