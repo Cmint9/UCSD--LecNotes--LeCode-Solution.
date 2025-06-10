@@ -1,1 +1,5 @@
+Double hashing is an open-addressing collision resolution technique that uses 2 different hash functions to compute bucket indices. 
+
+Hash function: formula(h1(key))+ i*h2(key))mod(tablesize)
+Iterating through sequential i values to obtain the desired table index is called the probing sequence.
 
