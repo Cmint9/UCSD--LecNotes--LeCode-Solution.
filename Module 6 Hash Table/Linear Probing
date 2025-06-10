@@ -6,3 +6,80 @@ An empty-since-start bucket has been empty since the hash table was created.
 An empty-after-removal bucket had an item removed that caused the bucket to now be empty
 
 Using linear probing, a hash table insert algorithm uses the item's key to determine the initial bucket, linearly probes (or checks) each bucket, and inserts the item in the next empty bucket (the empty kind doesn't matter).
+
+
+
+# Insert with linear probing
+HashInsert(hashTable, item) {
+   // Hash function determines initial bucket
+   bucket = Hash(item.key)    
+   bucketsProbed = 0
+   N = hashTable's size
+   while (bucketsProbed < N) {
+      // Insert item in next empty bucket
+      if (hashTable[bucket] is Empty) {
+         hashTable[bucket] = item
+         return true 
+      }
+
+      // Increment bucket index
+      bucket = (bucket + 1) % N
+
+      // Increment number of buckets probed
+      ++bucketsProbed
+   }
+
+   return false      
+}
+
+# Romoval using linear probing
+HashRemove(hashTable, key) {  
+   // Hash function determines initial bucket
+   bucket = Hash(key)
+   bucketsProbed = 0
+
+   while ((hashTable[bucket] is not EmptySinceStart) and
+         (bucketsProbed < N)) {
+
+      if ((hashTable[bucket] is not Empty) and
+         (hashTable[bucket]⇢key == key)) {
+         hashTable[bucket] = EmptyAfterRemoval
+         return
+      }
+
+      // Increment bucket index
+      bucket = (bucket + 1) % N
+
+      // Increment number of buckets probed
+      ++bucketsProbed
+   }
+}
+
+
+# Searching using linear probing 
+In linear probing, a hash table search algorithm uses the sought item's key to determine the initial bucket. 
+HashSearch(hashTable, key) {
+   // Hash function determines initial bucket
+   bucket = Hash(key)
+   bucketsProbed = 0
+
+   while ((hashTable[bucket] is not EmptySinceStart) and
+         (bucketsProbed < N)) {
+
+      if ((hashTable[bucket] is not Empty) and
+         (hashTable[bucket]⇢key == key)) {
+         return hashTable[bucket]
+      }
+
+      // Increment bucket index
+      bucket = (bucket + 1) % N
+
+      // Increment number of buckets probed
+      ++bucketsProbed
+   }
+
+   return null  // Item not found
+}
+
+
+
