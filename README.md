@@ -18,8 +18,8 @@ In UCSD's Algorithms class, we can practice algorithms and data structures from 
 Each folder corresponds to a core module in the course:
 - `sorting/` – Implementations and complexity comparisons
 - `recursion/` – Classical recursion examples and use cases
-- `dynamic_programming/` – Step-by-step DP problems with recursion tree analysis
-- `graphs/` – Graph traversals and shortest-paths with real-world applications
+- `Module5 Stacks and Queues/` – Step-by-step DP problems with recursion tree analysis
+- `Module 6 Hash Tables/` – Graph traversals and shortest paths with real-world applications
 - `resources.md` – My reading notes, references, and extra practice sets
 
 ## 📌 Why This Repo Matters
