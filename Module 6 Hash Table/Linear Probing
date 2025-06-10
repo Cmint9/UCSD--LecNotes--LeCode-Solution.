@@ -1,1 +1,8 @@
+ A hash table with linear probing handles a collision by  starting at the key's mapped bucket, and then linearly searches subsequent buckets until an empty bucket is found.
 
+Empty bucket types:
+Actually, linear probing distinguishes two types of empty buckets.
+An empty-since-start bucket has been empty since the hash table was created.
+An empty-after-removal bucket had an item removed that caused the bucket to now be empty
+
+Using linear probing, a hash table insert algorithm uses the item's key to determine the initial bucket, linearly probes (or checks) each bucket, and inserts the item in the next empty bucket (the empty kind doesn't matter).
