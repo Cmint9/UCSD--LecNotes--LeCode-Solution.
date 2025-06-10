@@ -3,3 +3,12 @@ In a hash table, an item's key is the value used to map to an index.
 
 Each hash table array element is called a bucket. 
 A hash function computes a bucket index from the item's key
+
+# How to understand the item representation:
+Normally, each item being stored is an object with several fields, such as a person object having a name, age, and ID number, with the ID number used as the key. 
+For simplicity, this section represents an item just by the item's key. Ex: Item 64 represents a person object with a key of 64, which is the person's ID.
+HashInsert(hashTable, item 64) inserts item 64 in bucket 4, representing item 64 in the hash table just by the key 64.
+
+# Hash Table operation:
+A common hash function uses the modulo operator %, which computes the integer remainder when dividing two numbers. 
+Ex: For a 20 element hash table, a hash function of key % 20 will map keys to bucket indices 0 to 19.
