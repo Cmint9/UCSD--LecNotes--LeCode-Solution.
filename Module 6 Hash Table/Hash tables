@@ -12,3 +12,5 @@ HashInsert(hashTable, item 64) inserts item 64 in bucket 4, representing item 64
 # Hash Table operation:
 A common hash function uses the modulo operator %, which computes the integer remainder when dividing two numbers. 
 Ex: For a 20 element hash table, a hash function of key % 20 will map keys to bucket indices 0 to 19.
+
+# Collisions: When an item being inserted into a hash table maps to the same bucket as an existing item in the hash table.
