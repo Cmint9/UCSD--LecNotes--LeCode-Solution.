@@ -1,0 +1,83 @@
+A hash table with quadratic probing handles a collision by starting at the key's mapped bucket,
+ If an item's mapped bucket is H, the formula:(H+c1*i +c2*i^2) mod(tablesize) is used to determine
+the item'ss undex in the hash table.
+
+# HashInsert with quadratic probing 
+
+HashInsert(hashTable, item) {
+   i = 0
+   bucketsProbed = 0
+
+   // Hash function determines initial bucket
+   bucket = Hash(item⇢key) % N
+   while (bucketsProbed < N) {
+      // Insert item in next empty bucket 
+      if (hashTable[bucket] is Empty) {
+         hashTable[bucket] = item
+         return true  
+      }
+
+      // Increment i and recompute bucket index
+      // c1 and c2 are programmer-defined constants for quadratic probing
+      i = i + 1
+      bucket = (Hash(item⇢key) + c1 * i + c2 * i * i) % N
+
+      // Increment number of buckets probed
+      bucketsProbed = bucketsProbed + 1
+   }
+   return false       
+}
+
+# HashRemove and HashSearch with quadratic probing
+HashRemove(hashTable, key) {
+   i = 0
+   bucketsProbed = 0
+
+   // Hash function determines initial bucket
+   bucket = Hash(key) % N
+
+   while ((hashTable[bucket] is not EmptySinceStart) and (bucketsProbed < N)) {
+      if ((hashTable[bucket] is Occupied) and (hashTable[bucket]⇢key == key)) {
+         hashTable[bucket] = EmptyAfterRemoval
+         return true
+      }
+
+      // Increment i and recompute bucket index
+      // c1 and c2 are programmer-defined constants for quadratic probing
+      i = i + 1
+      bucket = (Hash(key) + c1 * i + c2 * i * i) % N
+
+      // Increment number of buckets probed
+      bucketsProbed = bucketsProbed + 1
+   }
+   return false // key not found
+}
+
+
+HashSearch(hashTable, key) {
+   i = 0
+   bucketsProbed = 0
+
+   // Hash function determines initial bucket
+   bucket = Hash(key) % N
+
+   while ((hashTable[bucket] is not EmptySinceStart) and (bucketsProbed < N)) {
+      if ((hashTable[bucket] is Occupied) and (hashTable[bucket]⇢key == key)) {
+         return hashTable[bucket]
+      }
+
+      // Increment i and recompute bucket index
+      // c1 and c2 are programmer-defined constants for quadratic probing
+      i = i + 1
+      bucket = (Hash(key) + c1 * i + c2 * i * i) % N
+
+      // Increment number of buckets probed
+      bucketsProbed = bucketsProbed + 1
+   }
+   return null  // key not found
+}
+
+
+#
+
+
