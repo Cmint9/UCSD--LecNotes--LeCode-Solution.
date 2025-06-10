@@ -1,0 +1,5 @@
+A hash table is a data structure that stores unordered items by mapping (or hashing) each item to a location in an array (or vector).
+In a hash table, an item's key is the value used to map to an index. 
+
+Each hash table array element is called a bucket. 
+A hash function computes a bucket index from the item's key
