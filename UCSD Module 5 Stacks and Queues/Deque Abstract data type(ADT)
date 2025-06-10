@@ -1,0 +1,13 @@
+A deque is an ADT in which items can be inserted and removed at both the front and back.
+
+PushFront(deque, x)	Inserts x at the front of the deque	PushFront(deque, 41). Deque: 41, 59, 63, 19
+PushBack(deque, x)	Inserts x at the back of the deque	PushBack(deque, 41). Deque: 59, 63, 19, 41
+
+PopFront(deque)	Returns and removes item at front of deque	PopFront(deque) returns 59. Deque: 63, 19
+PopBack(deque)	Returns and removes item at back of deque	PopBack(deque) returns 19. Deque: 59, 63
+
+PeekFront(deque)	Returns but does not remove the item at the front of deque	PeekFront(deque) returns 59. Deque is still: 59, 63, 19
+PeekBack(deque)	Returns but does not remove the item at the back of deque	PeekBack(deque) returns 19. Deque is still: 59, 63, 19
+
+IsEmpty(deque)	Returns true if the deque is empty	IsEmpty(deque) returns false.
+GetLength(deque)	Returns the number of items in the deque	GetLength(deque) returns 3.
