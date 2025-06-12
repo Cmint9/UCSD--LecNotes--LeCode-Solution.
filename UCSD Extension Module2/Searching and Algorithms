@@ -54,4 +54,6 @@ NUMBERS: 2 4 7 10 11 32 45 87
 Enter a value: 17
 17 was not found.
 
+Algorithm runtime: An algorithm's runtime is the time the algorithm takes to execute. 
+If each comparison takes 1 µs (1 microsecond), a linear search algorithm's runtime is up to 1 s to search a list with 1,000,000 elements, 10 s for 10,000,000 elements, and so on. Ex: Searching Amazon's online store, which has more than 200 million items, could require more than 3 minutes
 
