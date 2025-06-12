@@ -1,0 +1,6 @@
+Resize Operation: 
+A hash table resize operation increases the number of buckets, while preserving all existing items.
+
+The time complexity O(N)
+
+# 
