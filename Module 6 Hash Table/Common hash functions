@@ -1,0 +1,34 @@
+A good hash function minimizes collisions
+
+Modulo hash function
+A modulo hash uses the remainder from division of the key by hash table size N.
+
+A mid-square hash squares the key, extracts R digits from the result's middle, and returns the remainder of the middle digits divided by hash table size 
+# Mid-square hash function(base2)
+
+HashMidSquare(int key) {
+   squaredKey = key * key
+   
+   lowBitsToRemove = (32 - R) / 2
+   extractedBits = squaredKey >> lowBitsToRemove
+   extractedBits = extractedBits & (0xFFFFFFFF >> (32 - R)) 
+
+   return extractedBits % N
+}
+
+
+###Multiplicative string hash function 
+A multiplicative string hash repeatedly multiplies the hash value and adds the ASCII (or Unicode) value of each character in the string.
+
+HashMultiplicative(string key) {
+   stringHash = InitialValue 
+
+   for (each character strChar in key) {
+      stringHash = (stringHash * HashMultiplier) + strChar
+   }
+
+   return stringHash % N
+}
+
+
+#
