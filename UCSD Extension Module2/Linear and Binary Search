@@ -69,4 +69,11 @@ if (key_index == -1):
 else:
     print('Found %d at index %d.' % (key, key_index))
 
-Output 
+Output:
+NUMBERS: [2, 4, 7, 10, 11, 32, 45, 87] 
+Enter a value: 10
+Found 10 at index 3.
+...
+NUMBERS: [2, 4, 7, 10, 11, 32, 45, 87]
+Enter a value: 17
+17 was not found.
