@@ -43,3 +43,15 @@ main() {
       printLine("Found " + key + " at index " + keyIndex + ".")
    }
 }
+
+(Here is the output to explain the code)
+Output here:  
+NUMBERS: 2 4 7 10 11 32 45 87 
+Enter a value: 10
+Found 10 at index 3.
+...
+NUMBERS: 2 4 7 10 11 32 45 87 
+Enter a value: 17
+17 was not found.
+
+
