@@ -27,4 +27,12 @@ Hash(key, tableSize) {
 }
 
 # When to resize 
-A hash table's load factor 
+A hash table's load factor  is the number of items in the hash table divided by the number of buckets
+Also, an implementation may have different reasons to resize the hash table.
+
+Load factor
+When using open-addressing, the number of collisions during an insertion
+When using chaining, the size of a bucket's linked-list.
+
+
+
