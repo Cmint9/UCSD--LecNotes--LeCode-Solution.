@@ -1,4 +1,4 @@
 # Constant Operator
 A constant operator, often implemented as a const method or function, is a function that promises not to alter the internal state of the object it is called on.
 
-"constant" "constant" 
+"constant" "const" 
