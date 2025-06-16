@@ -9,18 +9,18 @@ In UCSD's Algorithms class, we can practice algorithms and data structures from 
 - Sorting Algorithms (QuickSort, MergeSort, etc.)
 - Recursion and Divide & Conquer
 - Searching Techniques (Binary Search, Linear Search)
-- Dynamic Programming (Knapsack, LCS, LIS)
+- Dynamic Programming (Knapsack)
 - Graph Algorithms (BFS, DFS, Dijkstra)
 - Complexity Analysis
 
 ## 📁 Folder Structure
 
 Each folder corresponds to a core module in the course:
-- `sorting algroithm(Module3)/` – Implementations and complexity comparisons
+- `sorting algorithm (Module3)/` – Implementations and complexity comparisons
 - `recursion/` – Classical recursion examples and use cases
 - `Module5 Stacks and Queues/` – Step-by-step DP problems with recursion tree analysis
 - `Module 6 Hash Tables/` – Graph traversals and shortest paths with real-world applications
-- `resources.md` – My reading notes, references, and extra practice sets
+
 
 ## 📌 Why This Repo Matters
 
