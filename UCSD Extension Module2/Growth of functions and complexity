@@ -1,1 +1,8 @@
 
+For the growth of functions means that  to how the resources (like time or memory) required by an algorithm increase as the input size grows.
+Hence, we can follow the four different fields to understand. 
+
+Big O Notation: A way to express the upper bound of an algorithm's time or space complexity. It describes how the algorithm's resource usage grows as the input size increases. 
+Input Size (n): The number of elements or the size of the data being processed by an algorithm. 
+Time Complexity: How the execution time of an algorithm increases with the input size. 
+Space Complexity: How the memory usage of an algorithm increases with the input size
