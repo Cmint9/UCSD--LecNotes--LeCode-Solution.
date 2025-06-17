@@ -37,4 +37,27 @@ correct Answer:   InsertAfter(list, 25, 32)
 Reason to pick the wrong answer: it should have 25 before 32, hence is (list,25,32)
 
 
+# Question 3: Identify the commands for the following list operations.
+Check that there are no items in a list
+Insert 10, 50, 30, 40, and 20 at the end of the list
+Arrange the items in ascending order
+
+Correct answer: 
+  
+IsEmpty(list)
+
+Append(list, 10)
+
+Append(list, 50)
+
+Append(list, 30)
+
+Append(list, 40)
+
+Append(list, 20)
+
+Sort(list)
+Reason to pick the wrong answer: It should be use "Append", not "Prepend".
+
+
 
