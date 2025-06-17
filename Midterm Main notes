@@ -24,4 +24,17 @@ FindMaxLen(listOfAges, listSize) {
    return maxDigits
 }
 
-Reason to pick the wrong answer: "digitCount = FindLen(listOfAges[i])" it should be call function 'FindLen' 
+Reason to pick the wrong answer: "digitCount = FindLen(listOfAges[i])" it should be call function 'FindLen' not 'FindMaxLen'.
+
+
+# Question 2: Given the list (11, 22, 25), which is the correct way to add 32 to the list in ascending order?
+
+correct Answer:   InsertAfter(list, 25, 32) 
+  InsertAfter(list, 32) 
+  Prepend(list, 32, 25) 
+  Prepend(list, 32) 
+
+Reason to pick the wrong answer: it should have 25 before 32, hence is (list,25,32)
+
+
+
