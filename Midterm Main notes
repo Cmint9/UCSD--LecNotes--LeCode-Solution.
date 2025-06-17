@@ -60,4 +60,21 @@ Sort(list)
 Reason to pick the wrong answer: It should be use "Append", not "Prepend".
 
 
+# Question 4: Which XXX would complete the following Python insertion sort algorithm?
+
+
+def insertion_sort(num_list):
+    for i in range(1, len(num_list)):
+        j = i
+        XXX:
+            temp = num_list[j]
+            num_list[j] = num_list[j - 1]
+            num_list[j - 1] = temp
+            j -= 1
+
+Correct Answer:  while num_list[j] < num_list[j - 1] and j > 0
+Reason to pick the wrong answer: from the code, we can know they need do compare, and we 
+need to know how to compare them correctly.
+
+
 
