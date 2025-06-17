@@ -1,2 +1,16 @@
-Here is the notes for Midterm notes and the problems from UCSD Course: 
+Here are the notes for the Midterm and the problems from the UCSD Course: 
+
+Question 1: The following code finds the number of digits in an integer. Identify the correct algorithm to find the maximum number of digits in an integer array.
+
+FindLen(value) {
+   if (value == 0)
+      return 1
+   digits = 0
+   while (value != 0) {
+      digits = digits + 1
+      value = value / 10
+   }
+   return digits
+}
+
 
