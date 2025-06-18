@@ -98,6 +98,22 @@ LowNum(listOfAgeGroups, listSize, myAge) {
 Reasons to pick the wrong answer: for loop through the ctr, and being compared it should be O(N) not O(1).
 
 
+Question 7: The lower bound of an algorithm’s runtime complexity is _____.
+You Answered: ≥ the best case 
+Correct Answer:≤ the best case 
+               ≤ the worst case 
+               ≥ the worst case 
+
+Reason to pick the wrong answer: the lower bound that's means it should be the smallest nuber or range.
+Hence, we should pick the answer smaller and equal to the best case.
+
+Question 8: Which of the following statements is correct?
+               The queue ADT supports the insertion and deletion of items at the front and the back.
+Correct Answer: The list ADT supports the printing of the list contents, but the queue ADT does not. 
+You Answered: The queue ADT supports the removal of items from one end and the adding of items to the other end but the list ADT does not. 
+              The queue ADT supports the printing of the list content,s but the list ADT does not. 
+
+
 
 
 
