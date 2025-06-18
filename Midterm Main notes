@@ -85,6 +85,21 @@ Reason to pick the wrong answer: is that it should be visited first to see how m
 Then can call the function to traverse the nodes. 
 
 
+Question 6:What is the runtime complexity notation for the following algorithm?
+
+LowNum(listOfAgeGroups, listSize, myAge) {
+   for (ctr = 0; ctr < listSize; ++ctr) {
+      if (listOfAgeGroups[ctr] == myAge) 
+         return ctr
+      }
+   }
+ }
+
+Reasons to pick the wrong answer: for loop through the ctr, and being compared it should be O(N) not O(1).
+
+
+
+
 
 
 
