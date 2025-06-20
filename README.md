@@ -4,6 +4,8 @@
 
 In UCSD's Algorithms class, we can practice algorithms and data structures from different modules each week. Zybook provides us with a fairly rich collection of practice problems that can help us reinforce our review after learning a concept.
 
+### Final grade for this course: A
+
 ## 🧠 Topics Covered
 
 - Sorting Algorithms (QuickSort, MergeSort, etc.)
