@@ -6,4 +6,11 @@ Correct Answer: Leave the knapsack empty
                 Take multiple copies of the same item 
 You answered: take a fractional portion of an item
 
-Reason for pick the wrong answer: "Heuristic do the knapsake_01(), we need to pick the leave the knapsak empty 
+Reason for pick the wrong answer: "Heuristic do the knapsake_01(), we need to the leave the knapsack empty.
+
+Question 2: The optimized Python longest_common_substring() function has ______ space complexity.
+                O(1)
+                O(log2(len(str1)))
+Correct Answer: O(len(str2))
+You Answered:  O(len(str1)·len(str2))
+
