@@ -44,3 +44,25 @@ This helps reduce collisions and maintain efficient operations.
 
 
 
+Question 5: Which XXX completes the multiplicative string hash function?
+HashMutliplicative(string key) {
+   stringHash = InitialValue
+   for (each character strChar in key) {
+      XXX
+   }
+   return stringHash % N
+}
+Group of answer choices
+
+stringHash = (stringHash + HashMultiplier) + strChar
+stringHash = (stringHash * HashMultiplier) + strChar
+stringHash = (stringHash + HashMultiplier) * strChar
+stringHash = (stringHash * HashMultiplier) * strChar
+
+Answer: stringHash = (stringHash * HashMultiplier) + strChar
+Reason: Multiply the current hash by a multiplier ( it is usually be a prime number) 
+      Add the ASCII value ( or code) of the current character
+
+
+
+
