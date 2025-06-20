@@ -6,4 +6,4 @@ Correct Answer: Leave the knapsack empty
                 Take multiple copies of the same item 
 You answered: take a fractional portion of an item
 
-Reason for pick the wrong answer: " heuristic do the knapsake_01(), we need to pick the leave the knapsak empty 
+Reason for pick the wrong answer: "Heuristic do the knapsake_01(), we need to pick the leave the knapsak empty 
