@@ -28,6 +28,19 @@ leaf nodes represent only files
 
 Answer: lead nodes represent either files or empty directions
 
-In a fule system tree, leaf nodes can be files ( which have no children) or empty directions.
+In a fule system tree, leaf nodes can be files ( which have no children) or empty directories.
+
+Question 4: Which of the following is a valid reason for resizing a hash table?
+Group of answer choices
+
+Adding more than 1 item in a bucket
+Load factor is greater than 0.5
+Load factor is less than 0.1
+More than 5 items in a hash table
+
+Answer: Load factor is greater than 0.5
+Resaon: A common reason to resize a hash table is when the lad factor becomes too high.
+This helps reduce collisions and maintain efficient operations. 
+
 
 
