@@ -1,1 +1,9 @@
-## This file is for the wrong problem at Final exam notes
+## This file is for the wrong problem in the Final exam notes： 
+
+Question 1: The heuristic used by the Python knapsack_01() function may _____.
+Correct Answer: Leave the knapsack empty 
+                exceed the knapsack's weight limit
+                Take multiple copies of the same item 
+You answered: take a fractional portion of an item
+
+Reason for pick the wrong answer: " heuristic do the knapsake_01(), we need to pick the leave the knapsak empty 
