@@ -14,3 +14,20 @@ Question 2: The optimized Python longest_common_substring() function has ______ 
 Correct Answer: O(len(str2))
 You Answered:  O(len(str1)·len(str2))
 
+
+Question 3: In a tree representing a file system, _____.
+Group of answer choices
+
+leaf nodes represent only empty directories
+
+leaf nodes represent only non-empty directories
+
+leaf nodes represent either files or empty directories
+
+leaf nodes represent only files
+
+Answer: lead nodes represent either files or empty directions
+
+In a fule system tree, leaf nodes can be files ( which have no children) or empty directions.
+
+
