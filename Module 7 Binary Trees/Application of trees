@@ -1,1 +1,17 @@
+Applications of trees
+
+# Hierarchical Data Representation: 
+Trees excel at representing relationships where data is organized in a nested, parent-child structure. 
+=XML/HTML documents: representing the structure of these documents.
+
+# Searching, sorting, and indexing
+Binary Search Trees (BSTs) could be used for searching, inserting, and deleting data in a sorted  manner. 
+
+# Priority Queues: 
+Heaps: Binary heaps, which are a type of tree, are used to implement priority queues, where elements are 
+Processed based on their priority. 
+
+# Decision Trees: 
+Decision trees for use in machine learning for classification and regression takes, making predictions based on a series of decisions. 
+
 
