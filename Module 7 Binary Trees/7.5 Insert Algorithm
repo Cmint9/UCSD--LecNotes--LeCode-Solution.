@@ -1,1 +1,19 @@
+Here we will explain the insert algorithm: 
 
+Insert sort( insertion sort) is a simple sorting algorithm that works by iteratively inserting each 
+element of an unsorted list into its correct position in a sorted portion of the list. 
+
+# So we have to understand how this algorithm works: 
+1. First, assume the first element is sorted, it should starts by assuming the first elemenet of the list is already sorted. 
+2. Secondly, iterate through the other unsorted part: Keep iterating through the remaining elements of the list. 
+3. Thirdly, each element in the unsorted part is compared with the other elements in the sorted part until the correct position is found. 
+4. Shift elements: If the element being inserted is smaller than any element in the sorted part, the elements in the sorted part.
+5. Insert the element: The element is then inserted into its correct position in the sorted part. 
+6. Repeat the process: this process is repeated until all elements have been inserted into the sorted part. 
+
+
+
+# Time complexity: 
+worst-case: O(n^2) when the list is in reverse order
+Best-case: O(n) when the list is already sorted
+Average-case: O(n^2)
