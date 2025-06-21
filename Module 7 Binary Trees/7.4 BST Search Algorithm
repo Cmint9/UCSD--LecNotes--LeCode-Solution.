@@ -1,1 +1,7 @@
+Binary search Tree (BST) 
+
+Given a BST, the task is to search a node in this BST. In order to search a value in BST,
+We should consider it as a sorted array. 
+
+Algorithms to search for a key in a given Binary Search Tree: 
 
