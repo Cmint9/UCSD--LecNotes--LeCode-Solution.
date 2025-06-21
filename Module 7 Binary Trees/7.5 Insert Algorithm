@@ -16,4 +16,5 @@ element of an unsorted list into its correct position in a sorted portion of the
 # Time complexity: 
 worst-case: O(n^2) when the list is in reverse order
 Best-case: O(n) when the list is already sorted
-Average-case: O(n^2)
+Average-case: O(n^2) 
+
