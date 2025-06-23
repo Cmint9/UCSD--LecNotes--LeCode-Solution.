@@ -1,1 +1,20 @@
+O Notation: 
+
+Big O notation is a powerful tool. We usually use to used describe the time complexity or space complexity of algorithms. 
+
+# Importance of Big O notation 
+1. Big O notation is important because it helps analyze the efficiency of algorithms
+2. It provides a ways to describe how the runtime or space
+3. It helps in understanding the scalability of algorithms and predicting how they will perform as the input size grows.
+
+#Here are some examples:
+1. Reflexivity 
+2. Transitivity 
+3. Constant Factor 
+4. Sum rule
+5. Product rule 
+6. Composition rule 
+
+
+
 
