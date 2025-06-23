@@ -26,8 +26,12 @@ Common Big _O notation:
 
 Linear Time Complexity: 
 Big O(n) complexity 
-Linear time complexity mean sthat the runnig time of an algorithm grows linearly 
+Linear time complexity means sthat the runnig time of an algorithm grows linearly 
 withe the size of the input
+
+2. Kigarithmic Time Complexity: Big O(logn) complexity 
+For exmaple: Binary search algorithm 
+
 
 
 
