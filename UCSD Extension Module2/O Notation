@@ -9,11 +9,27 @@ Big O notation is a powerful tool. We usually use to used describe the time comp
 
 #Here are some examples:
 1. Reflexivity 
-2. Transitivity 
+For any function f(n), f(n) = O(f(n)).
+2. Transitivity
+If f(n) = O(g(n)) and g(n) = O(h(n)), then f(n) = O(h(n)).
 3. Constant Factor 
+For any constant c > 0 and functions f(n) and g(n), if f(n) = O(g(n)), then cf(n) = O(g(n)).
 4. Sum rule
+If f(n) = O(g(n)) and h(n) = O(k(n)), then f(n) + h(n) = O(max( g(n), k(n) ) When combining complexities, only the largest term dominates.
+For example: f(n) = n2, h(n) = n3. Then , f(n) + h(n) = O(max(n2 + n3) = O ( n3)
 5. Product rule 
+If f(n) = O(g(n)) and h(n) = O(k(n)), then f(n) * h(n) = O(g(n) * k(n)).
 6. Composition rule 
+If f(n) = O(g(n)) and g(n) = O(h(n)), then f(g(n)) = O(h(n)).
+
+Common Big _O notation: 
+
+Linear Time Complexity: 
+Big O(n) complexity 
+Linear time complexity mean sthat the runnig time of an algorithm grows linearly 
+withe the size of the input
+
+
 
 
 
