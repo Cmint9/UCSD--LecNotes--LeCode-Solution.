@@ -1,1 +1,22 @@
+ADTs define the behavior of data structures without specifying their implementation.
+
+Common examples: lists, stacks, queues, set trees and graphs.
+Here are a detailed breakdown of linear data structure and Non-linear Data structure: 
+
+Linear Data Structure:
+
+List: an ordered collection of elements that allows access, insertion, and removal of elements
+by index. e.g. ArrayList, linkedList
+
+Stack: A collection where elements are added and removed following a LIFO Principle
+
+Queue: A collection where elements are added and removed FIFO
+
+Non-Linear Data Structure: 
+
+Set: stores unique elements, allowing for memvership testing, insertion and removal
+Map: key-value pairs where each key is unique and associated with a single value
+Tree: A hierarchical structure with a root node with subtrees
+Graph: A collection of nodes and edges that connect them  
+
 
