@@ -13,7 +13,7 @@ nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
 nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
 nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
 The distinct triplets are [-1,0,1] and [-1,-1,2].
-Notice that the order of the output and the order of the triplets does not matter.
+Notice that the order of the output and the order of the triplets do not matter.
 Example 2:
 
 Input: nums = [0,1,1]
@@ -24,9 +24,20 @@ Example 3:
 Input: nums = [0,0,0]
 Output: [[0,0,0]]
 Explanation: The only possible triplet sums up to 0.
- 
 
 Constraints:
 
 3 <= nums.length <= 3000
 -105 <= nums[i] <= 105
+
+
+
+### Solution and analysis
+Following the three examples, we already knew here would be three test cases. 
+At first, we need to find three numbers x,y,z, then add them uo to the given value.
+The, for the two-sum problem, if we fix one of the numbers, e.g x, we have to scan the entire arry to find the next number y.
+
+
+
+
+
