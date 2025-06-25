@@ -1,4 +1,4 @@
-# Here is the description for problem15: 3sum
+# Here is the description for problem 15: 3sum
 
 Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 
@@ -35,7 +35,40 @@ Constraints:
 ### Solution and analysis
 Following the three examples, we already knew here would be three test cases. 
 At first, we need to find three numbers x,y,z, then add them uo to the given value.
-The, for the two-sum problem, if we fix one of the numbers, e.g x, we have to scan the entire arry to find the next number y.
+Then, for the two-sum problem, if we fix one of the numbers, e.g x, we have to scan the entire array to find the next number y.
+
+solution: 
+
+class Solution(object):
+    def threeSum(self, nums):
+    # two paramteres, self and nums
+        nums.sort()
+    # Sort the num list and get the length of the list
+        n=len(nums)
+        res=[]
+    # Create a loop to loop through the whole list 
+        for i in range(n):
+    # check the value bigger than 0
+            if i>0 and nums[i]==nums[i-1]:
+                continue
+            else:
+                j=i+1
+                k=n-1
+                while(j<k):
+                    sums=nums[i]+nums[j]+nums[k]
+                    if sums>0:
+                        k-=1
+                    elif sums<0:
+                        j+=1
+                    else:
+                        res.append([nums[i],nums[j],nums[k]])
+                        j+=1
+                        k-=1
+                        while(j<k and nums[j]==nums[j-1]):
+                            j+=1
+                        while(j<k and nums[k]==nums[k+1]):
+                            k-=1
+        return res
 
 
 
