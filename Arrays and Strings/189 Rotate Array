@@ -1,7 +1,6 @@
 This is for the problem 189 description:
-Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
 
- 
+Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
 
 Example 1:
 
@@ -25,6 +24,10 @@ Constraints:
 1 <= nums.length <= 105
 -231 <= nums[i] <= 231 - 1
 0 <= k <= 10
+
+## Solving Problems
+The rotation followed from the k value; from the first example, we can know the number from the end to the begining.
+
 
 
 
