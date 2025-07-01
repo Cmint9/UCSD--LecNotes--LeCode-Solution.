@@ -42,6 +42,14 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+        n = len(nums)
+        k = k % n 
+        if k == 0: return 
+        tem = nums[-k:]
+        nums[k:] = nums[:-k]
+        nums[:k] = temp
+
+
         
 
 
