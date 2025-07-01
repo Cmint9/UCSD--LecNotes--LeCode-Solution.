@@ -26,7 +26,23 @@ Constraints:
 0 <= k <= 10
 
 ## Solving Problems
-The rotation followed from the k value; from the first example, we can know the number from the end to the begining.
+The rotation followed from the k value; from the first example, we can know the number from the end to the beginning.
+The goal is to rotate an array "nums" to the right by k positions, Hence, we can try first, adjust k
+ensure it's within bounds. k = k %n
+Then store the last k elements. Save the last k elements in a temporary array. Then we will shift the first
+n-k elements( move the elements before the last k to the right by the k position. 
+
+
+
+
+
+
+class Solution:
+    def rotate(self, nums: List[int], k: int) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        
 
 
 
