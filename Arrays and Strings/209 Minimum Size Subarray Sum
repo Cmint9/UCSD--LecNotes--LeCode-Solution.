@@ -26,6 +26,21 @@ Constraints:
 1 <= nums[i] <= 104
 
 ###Soultion:
+The length of  a subarray whose sum is greater than or equal to the target.
+
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+       # make sure the left = right equal 0
+       left = right = SUM = 0
+       # create a loop to count the numbers
+       shortest = float('inf')
+       for right in range(len(nums)):
+           SUM += nums[right]
+           while SUM >= target:
+                 shorest = min(shortest,((right-left)+1))
+                 SUM-= nums[left]
+                 left += 1
+       return shortest if shortest!= float('inf) else 0
+
+
         
