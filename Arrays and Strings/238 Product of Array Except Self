@@ -1,9 +1,8 @@
 # This is for problem 238 Product of Array Except Self
 
-Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
-
+Given an integer array nums, return an array answer such that answer[i] is 
+equal to the product of all the elements of nums except nums[i].
 The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
-
 You must write an algorithm that runs in O(n) time and without using the division operation.
 
  
@@ -16,5 +15,44 @@ Example 2:
 
 Input: nums = [-1,1,0,-3,3]
 Output: [0,0,9,0,0]
+Constraints:
+
+2 <= nums.length <= 105
+-30 <= nums[i] <= 30
+The input is generated such that answer[i] is guaranteed to fit in a 32-bit integer.
+
+### This is a solution to the problem:
+Analysis for this problem: this problem is similar to finding a Prefix sum array, we can yse the way to 
+Find the Prefix Product Array and Suffix Product Array for our original array.
+
+
+from collections import defaultdict
+
+class Solution:
+    def productExceptSelf(self, nums: list[int]) -> list[int]:
+        prods = defaultdict(int)
+        def prod(arr):
+          # Loop through the array
+            if 0 in set(arr):
+                return 0
+            ans = 1
+            for i in arr:
+                ans *= i
+            return ans
+            
+        ints = set(nums)
+        temp = nums[:]
+        for i in ints:
+            temp.remove(i)
+            prods[i] = prod(temp)
+            temp.append(i)
+        
+        n = len(nums)
+        answer = [0]*n
+        for i, val in enumerate(nums):
+            answer[i] = prods[val]
+        return answer
+
+
 
 
