@@ -1,1 +1,41 @@
+# This is problem 101. Binary Tree level description:
+
+Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
+
+ 
+
+Example 1:
+
+
+Input: root = [3,9,20,null,null,15,7]
+Output: [[3],[9,20],[15,7]]
+Example 2:
+
+Input: root = [1]
+Output: [[1]]
+Example 3:
+
+Input: root = []
+Output: []
+ 
+
+Constraints:
+
+The number of nodes in the tree is in the range [0, 2000].
+-1000 <= Node.val <= 1000
+
+### Solution and analysis
+Each time we encounter a problem with a Binary tree, we need to think about which method 
+we should use. For this problem, we need to use the BFS approach with a queue. We use a recursive DFS and 
+pass the current level to build the level-wise result .
+
+Approach: 
+1) We can use the DFS traversal method. 
+2) Maintain a result list where each index corresponds to a level. 
+3) When we reach a new level, we can append a new empty list 
+4) After that, we can add the node's value to that level and continue recursively to the left and right subtrees. 
+
+
+
+
 
