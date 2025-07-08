@@ -35,6 +35,32 @@ Approach:
 3) When we reach a new level, we can append a new empty list 
 4) After that, we can add the node's value to that level and continue recursively to the left and right subtrees. 
 
+# Define a binary tree node: 
+class TreeNode(object):
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Solution(object):
+    def levelOrder(self, root):
+        result = []
+
+        def dfs(node, level):
+         # check the BFS each node
+            if node is None:
+                return
+            # Check the each level and the tree
+            if level == len(result):
+                result.append([])
+           # recursive, and append to the new empty list 
+            result[level].append(node.val)
+            dfs(node.left, level + 1)
+            dfs(node.right, level + 1)
+
+        dfs(root, 0)
+        return result
+
 
 
 
