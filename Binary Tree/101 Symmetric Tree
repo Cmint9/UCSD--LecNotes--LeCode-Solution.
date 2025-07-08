@@ -28,3 +28,28 @@ class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
 
 
+### Solution and analysis
+To check if a binary tree is symmetric, we need to compare its left subtree and right subtree.
+In order to do this, we can traverse the tree recursively and compare the left and righht subtree at each level. 
+If they are symmetric, we need to continue the traversal. 
+
+We can also define a recursive helper function that gives us two nodes as input. One from the left 
+subtree and one from the right subtree. The helper function returns true if both nodes are null, or if 
+the values are equal and their subtrees are the same. 
+
+class Solution(object):
+    def isSame(self, left, right):
+       # check the left and right side of the tree
+        if not left and not right:
+            return True
+        if not left or not right:
+            return False
+        return left.val == right.val and self.isSame(left.left, right.right) and self.isSame(left.right, right.left)
+    # Define a function to check the root node
+    def isSymmetric(self, root):
+        if not root:
+            return True
+        return self.isSame(root.left, root.right)
+
+
+
